@@ -1,0 +1,34 @@
+bagging-is used in descion tree now if u use for loop for a descion tree it will explore all trees and their predictions atleast once some of it may have high error so bagging takes that error forms a new tree and keeps traning the trees untill it reaches a prediction with very low error
+
+out of bag-data that is left by the tree is out of bag
+
+biased-the error in traning dataset is called as biased
+
+variance-the error in test dataset is called as variance
+
+descision tree is supervised
+
+prooning- is giving less data to tree
+
+boosting
+
+stacking-is dividing the data and the fit it into different models it is a collection of models
+
+adaboost is used for underfitted trees that is trees with max_Depth value as 1 or 2 or so and rest procedure is same as bagging
+
+append adds to the list
+
+gradientboosting-extreme gradient boosting(xgboost) or lgb is used for calculating the error for eg in the titanic dataset x is something and survived is y now u predict y in train the difference between y in train and y in test is variance so gradient boosting calculates the differnce it  further minimizes the error just like bagging by working on it.Thus after it keeps ondoing this till there will be one point where the error will be almost none at that point it will give a number and that is the number of trees that must be used to get max score
+question is there was no number shown for the number of trees instead predictions were directly concluded
+
+grid search=for loop
+
+
+why kfold cross validation over train_test_split?
+because in train_test_Split u give variable xtrain ytrain xtest and ytest now u give test size so this randomly assigns data from dataset to xtrain ,ytrain,ytest,xtest now some of the data from xtest adn y test cannot be explored hence the score will only be based on data that was provided through xtrain and ytrain in dataset so kfold trains and tests the whole data not once but many times hence kfold
+
+drawback of descion tree or random forest iis it will always overfit or underfit so chances of score being 1 is high as well as low score can also be obtained
+
+gradient boositng works on error as discuused above and trains on it till error is minimize and thus u get a good score like a neural netork
+
+train_test_split cannot be applied in simple linear regression

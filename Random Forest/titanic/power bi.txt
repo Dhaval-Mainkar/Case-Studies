@@ -1,0 +1,2 @@
+why do u need powerbi?
+beacuse for eg if u want to take multipe sheets with thousands of columns and say paste it in 1sheet that is create a new sheet by merging these sheets alltogether u run out of space thus u cant compare the data
